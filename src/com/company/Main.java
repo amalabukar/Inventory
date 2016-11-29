@@ -34,6 +34,12 @@ public class Main {
                 Inventory item = new Inventory(text, 0);
                 items.add(item);
 
+            } else if (option.equals("2")) {
+                System.out.println("What item do you want to remove");
+                int itemNum = Integer.parseInt(scanner.nextLine());
+                items.remove(itemNum-1);
+                System.out.println("Item Removed");
+
             } else if (option.equals("3")) {
                 System.out.println("What item do you want to update?");
                 int itemNum = Integer.parseInt(scanner.nextLine());
